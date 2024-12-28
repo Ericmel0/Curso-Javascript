@@ -63,3 +63,5 @@ switch(nome){
      console.log("nome não encontrado");
      break;
 }
+
+console.log("oi")
