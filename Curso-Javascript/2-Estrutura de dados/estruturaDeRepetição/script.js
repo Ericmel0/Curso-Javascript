@@ -50,7 +50,7 @@ t++
 
 //switch
 
-let nome = "matheus"
+let nome = "joão"
 
 switch(nome){
     case "matheus":
@@ -63,6 +63,3 @@ switch(nome){
      console.log("nome não encontrado");
      break;
 }
-
-console.log("oi")
-console.log("oooi")
