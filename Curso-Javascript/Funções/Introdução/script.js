@@ -61,3 +61,23 @@ function multiDoisNumeros(a, b) {
 const mit = multiDoisNumeros(2, 5);
 
 console.log(mit);
+
+/////////////////////////////////////////////
+
+function dirigir(idade, cnh) {
+  if (idade >= 18 && cnh == true) {
+    console.log("pode dirigir");
+  } else {
+    console.log("não pode dirigir");
+  }
+}
+
+dirigir(18, true);
+
+let x = 10;
+
+if (x > 5) {
+  x = 20;
+  console.log(x);
+}
+console.log(x);
