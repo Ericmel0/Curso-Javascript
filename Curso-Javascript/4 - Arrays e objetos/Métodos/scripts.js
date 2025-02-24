@@ -49,3 +49,24 @@ console.log(nu.slice(0, 3));
 console.log(nu.slice(3));
 console.log(nu.slice(2, 5));
 console.log(nu.slice(-3));
+
+/*forEach cria um for com array */
+let letra = ["a", "b", "c", "d"];
+
+letra.forEach((letra) => {
+  console.log("a letra é " + letra);
+});
+
+/*Includes serve para verificar se um item existe na array.
+O valor retornado é um booleano
+if(carros.includes(sla)).*/
+
+let comidas = ["pizza", "pastel", "coxinha"];
+
+console.log(comidas.includes("pizza"));
+
+/*Reverse retorna a array invertida, tanto número quanto strings */
+
+let reve = [0, 1, 2, 3, 4, 5];
+
+console.log(reve.reverse());
