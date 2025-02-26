@@ -25,3 +25,28 @@ console.log(fraseArr.join(" "));
 /*Repeat repete uma palavra*/
 let palavra = "repetir ";
 console.log(palavra.repeat(20));
+
+/*Destructuring transforma elementos de um objeto ou de array em
+variáveis para ser mais fácil de invocá-las */
+
+//objetos
+
+let obj = {
+  roda: 4,
+  portas: 2,
+  motor: "2.0",
+};
+
+const { roda: r, portas: p, motor: m } = obj;
+
+console.log(obj.roda);
+console.log(r);
+
+//array
+
+let arr = ["noda", "torta", "doutor"];
+
+const [n, t, d] = arr;
+
+console.log(arr[1]);
+console.log(t);
