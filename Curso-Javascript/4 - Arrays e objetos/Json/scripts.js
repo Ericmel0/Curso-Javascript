@@ -1,9 +1,3 @@
-let pessoa = {
-  nome: "eric",
-  idade: 19,
-  profissão: "programador",
-  hobbies: ["video game", "basquete", "assistir"],
-};
 /*JSON.stringify transforma JSON em string e JSON.parse transforma
  em JSON novamente */
 let pessoatexto = JSON.stringify(pessoa);
