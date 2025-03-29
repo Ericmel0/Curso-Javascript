@@ -1,34 +1,12 @@
-/*Métodos são funções dentro de objetos */
-const cachorro = {
-  latir: function () {
-    console.log("au au");
-  },
-  uivar: function () {
-    console.log("auuuuuuu");
-  },
+/*Prototypes são como uma herança de objetos,
+ onde um objeto filho herda as propriedades
+  do objeto pai, exemplo: */
+
+let pessoa = {
+  mãos: 2,
 };
 
-cachorro.latir();
-cachorro.uivar();
+let pessoaNova = Object.create(pessoa);
 
-/*Aprofundando com métodos */
-
-const definirNome = {
-  nome: "SN",
-  setNome: function (nome) {
-    this.nome = nome;
-  },
-  getNome() {
-    console.log("o nome é " + this.nome);
-  },
-};
-
-console.log(definirNome.nome);
-
-definirNome.getNome();
-
-definirNome.setNome("eric");
-
-console.log(definirNome.nome);
-
-definirNome.getNome();
+console.log(pessoa.mãos);
+console.log(pessoaNova.mãos);
