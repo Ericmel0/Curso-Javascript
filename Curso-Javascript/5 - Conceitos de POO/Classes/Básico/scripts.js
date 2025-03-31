@@ -25,15 +25,3 @@ console.log(labrador);
 console.log(cachorro);
 
 /*instanciar uma classe é criar um objeto na classe */
-
-/*construtor por função*/
-
-function criaCachorro(raca, patas, cor) {
-  let cachorro = Object.crerate({});
-  cachorro.raca = raca;
-  cachorro.patas = patas;
-  cachorro.cor = cor;
-}
-
-let viralata = criaCachorro("viralata", 4, "caramelo");
-console.log(viralata);

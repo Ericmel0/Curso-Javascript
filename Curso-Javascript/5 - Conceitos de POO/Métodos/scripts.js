@@ -1,4 +1,5 @@
-/*Métodos são funções dentro de objetos */
+/*Métodos são funções dentro de objetos 
+e propriedades são como variáveis*/
 const cachorro = {
   latir: function () {
     console.log("au au");
@@ -32,3 +33,6 @@ definirNome.setNome("eric");
 console.log(definirNome.nome);
 
 definirNome.getNome();
+
+/*Ao chamar um método, usamos: objeto.metodo() com parentêses
+Ao chamar uma função, usamos: objeto.propriedade sem parentêses*/

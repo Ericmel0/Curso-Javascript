@@ -27,3 +27,13 @@ let fusca = new Carro(2, "azul", "fusca");
 console.log(fusca.cor);
 
 /*instancia por método*/
+
+Carro.prototype.buzina = function () {
+  console.log("fon fon");
+};
+
+fusca.buzina();
+
+fusca.cor = "vermelho";
+
+console.log(fusca.cor);
