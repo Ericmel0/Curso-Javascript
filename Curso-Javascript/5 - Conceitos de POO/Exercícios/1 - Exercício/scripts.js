@@ -1,9 +1,9 @@
-function Banco(saldoInicial) {
+function ContaCorrente(saldoInicial) {
   this.saldo = saldoInicial;
-  this.deposito = function (val1) {
+  this.depositar = function (val1) {
     this.saldo += val1;
   };
-  this.saque = function (val2) {
+  this.sacar = function (val2) {
     if (val2 > this.saldo) {
       console.log("saldo insuficiente");
     } else {
@@ -12,7 +12,7 @@ function Banco(saldoInicial) {
   };
 }
 
-let minhaConta = new Banco(500);
+let minhaConta = new ContaCorrente(500);
 
 console.log(minhaConta);
 minhaConta.deposito(300);
