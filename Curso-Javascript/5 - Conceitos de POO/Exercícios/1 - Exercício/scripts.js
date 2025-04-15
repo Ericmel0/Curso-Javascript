@@ -1,5 +1,5 @@
-function ContaCorrente(saldoInicial) {
-  this.saldo = saldoInicial;
+function ContaCorrente(saldo) {
+  this.saldo = saldo;
   this.depositar = function (val1) {
     this.saldo += val1;
   };
@@ -15,8 +15,8 @@ function ContaCorrente(saldoInicial) {
 let minhaConta = new ContaCorrente(500);
 
 console.log(minhaConta);
-minhaConta.deposito(300);
+minhaConta.depositar(300);
 console.log(minhaConta);
-minhaConta.saque(8000);
-minhaConta.saque(250);
+minhaConta.sacar(8000);
+minhaConta.sacar(250);
 console.log(minhaConta);
