@@ -77,3 +77,23 @@ console.log(opcional1.test("abacaxi"));
 console.log(opcional1.test("abacai"));
 console.log(opcional1.test("abacaxi1"));
 console.log(opcional1.test("abac1axi1"));
+
+//ocorrência precisa {}, seve para delimitar quantidades
+
+const cep = /\d{5}-\d{3}/;
+
+console.log(cep.test("98117-500")); //true
+console.log(cep.test("98117500")); //false
+console.log(cep.test("98117- 500")); //false
+console.log(cep.test("98117-500df")); //true
+console.log(cep.test("98117-500 ")); //true
+
+//exec em vez de test retorna um objeto no lugar de um boolean
+
+//choice patern funciona como um or ||
+
+let frutas = /\d+ (bananas|maçâs)/;
+
+console.log(frutas.test("10 bananas"));
+console.log(frutas.test("10 maçâs"));
+console.log(frutas.test("10 maças"));
