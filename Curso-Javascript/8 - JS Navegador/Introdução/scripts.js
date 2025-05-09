@@ -1,18 +1,18 @@
-/*Generators é um loop que é ativado sempre que é chamado.
-No exemplo abaixo temos um contador de número manual, sempre que
-chamamos com o next ele executa a função e para quando chega no yield*/
+console.log(document.getElementsByTagName("h1"));
+console.log(document.getElementsByClassName("texto"));
 
-function* criadorId() {
-  let id = 0;
-  while (true) {
-    yield id++;
-  }
-}
+let novoElemento = document.createElement("p");
+let elementAlvo = document.querySelector("#olá mundo");
+let elementoPai = document.querySelector("#texto");
+elementoPai.insertBefore(novoElemento, elementAlvo);
 
-let criaId = criadorId();
+let texto = document.createTextNode("teste");
 
-console.log(criaId.next().value);
-console.log(criaId.next().value);
-console.log(criaId.next().value);
-console.log(criaId.next().value);
-console.log(criaId.next().value);
+novoElemento.appendChild(texto);
+
+//replacechield troca um elemento por outro
+
+let heading = document.querySelector("#alterar");
+let paiHeading = heading.parentNode;
+
+paiHeading.replaceChild(novoElemento, heading);
