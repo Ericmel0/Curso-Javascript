@@ -9,3 +9,5 @@ btn1.addEventListener("click", msg);
 btn2.addEventListener("click", function () {
   btn1.removeEventListener("click", msg);
 });
+
+//Demais aulas sobre eventos acabaram n sendo salvas :(
